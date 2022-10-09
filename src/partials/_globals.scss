@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    &:is(&::after, &::before, *) {
+        box-sizing: border-box;
+    }
 }
 
 body {
@@ -9,4 +11,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /*background-image: linear-gradient(to top left, #3E065F, #000000);
+    color: white;*/
 }
