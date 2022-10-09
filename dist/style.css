@@ -1,1 +1,22 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 16em;
+}/*# sourceMappingURL=style.css.map */
