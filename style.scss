@@ -11,18 +11,31 @@
     border: 2px solid #000;
     padding: 1.875em 2.5em;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 12.75em;
+    justify-content: space-evenly;
     h1 {
         padding-bottom: 0.15em;
     }
-    #password-entry {
-        outline: 0;
-        border: 0;
-        border-bottom: 2px solid #000;
-        height: 4em;
-        width: 100%;
-        font-size: 1em;
-        &::placeholder {
+    #password-section {
+        #password-show-or-hide-section {
+            position: absolute;
+            transform: translate(-50%);
+            top: 50%;
+            right: 40px;
+            cursor: pointer;
+        }
+        #password-entry {
+            outline: 0;
+            border: 0;
+            border-bottom: 2px solid #000;
+            height: 2em;
+            width: 100%;
             font-size: 1em;
+            &::placeholder {
+                font-size: 1em;
+            }
         }
     }
     .password-strength-check {
