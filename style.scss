@@ -20,13 +20,18 @@
         border-bottom: 2px solid #000;
         height: 4em;
         width: 100%;
+        font-size: 1em;
+        &::placeholder {
+            font-size: 1em;
+        }
     }
     .password-strength-check {
-        background-color: #444;
-        height: 2em;
+        background-color: rgb(193, 193, 193);
+        height: 0.5em;
         width: 12em;
         display: flex;
         margin-top: 0.625em;
         width: 100%;
+        border-radius: 10px;
     }
 }
