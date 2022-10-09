@@ -52,10 +52,11 @@
             position: absolute;
             left: 0;
             height: 100%;
-            width: 10%;
+            width: calc(1% * $password-strength);
             border-radius: $border-radius;
             background-image: linear-gradient(to right, #ff0000, #ffff00, #008000);
-            overflow: hidden
+            overflow: hidden;
+            transition: width 2s;
         }
     }
 }
