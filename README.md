@@ -1,6 +1,10 @@
+<div align="center">
+
 <h1>Password Strength Checker</h1>
 
 ![](https://api.checklyhq.com/v1/badges/checks/90c31d05-ae71-4382-8a29-44d820e023a7?style=for-the-badge&theme=dark) ![](https://api.checklyhq.com/v1/badges/checks/90c31d05-ae71-4382-8a29-44d820e023a7?style=for-the-badge&theme=dark&responseTime=true) <br><br> ![GitHub deployments](https://img.shields.io/github/deployments/asbhogal/Password-Strength-Checker/production?label=DEPLOYMENT%20STATE&style=for-the-badge&labelColor=000) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/asbhogal/Password-Strength-Checker?style=for-the-badge&labelColor=000) ![GitHub repo size](https://img.shields.io/github/repo-size/asbhogal/Password-Strength-Checker?color=blueviolet&style=for-the-badge&labelColor=000)
+
+</div>
 
 An online tool which checks the strength of the password entered and advises the user to create a 'strong' one if it is considered 'weak' or 'medium'. This leverages JavaScript regex, and is built using vanilla HTML5 and CSS3 (SCSS.) This repo is currently under development.
 
