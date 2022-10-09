@@ -21,7 +21,7 @@
     #password-section {
         #password-show-or-hide-section {
             position: absolute;
-            transform: translate(-50%);
+            @include cross-browser-support-transform-x-set;
             top: 50%;
             right: 2.5em;
             cursor: pointer;

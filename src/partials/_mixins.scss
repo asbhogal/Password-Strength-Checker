@@ -1,0 +1,9 @@
+@import 'variables';
+
+@mixin cross-browser-support-transform-x-set {
+    transform:              $translate-x;
+    -webkit-transform:      $translate-x;
+    -ms-transform:          $translate-x;
+    -moz-transform:         $translate-x;
+    -o-transform:           $translate-x;
+}
