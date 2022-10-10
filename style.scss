@@ -33,8 +33,14 @@
             height: 2em;
             width: 100%;
             font-size: 1em;
+            transition: 0.5s all ease-in;
+            @include cross-browser-support-transition-set;
             &::placeholder {
                 font-size: 1em;
+            }
+            &:focus {
+                border-bottom-color: #ad7139;
+                @include cross-browser-support-transition-set;
             }
         }
     }

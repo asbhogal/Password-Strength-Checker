@@ -7,3 +7,10 @@
     -moz-transform:         $translate-x;
     -o-transform:           $translate-x;
 }
+
+@mixin cross-browser-support-transition-set {
+    transition:             $transition-05;
+    -webkit-transition:     $transition-05;
+    -moz-transition:        $transition-05;
+    -o-transition:          $transition-05;
+}
