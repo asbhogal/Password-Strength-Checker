@@ -16,8 +16,16 @@ body {
   color: white;*/
 }
 
+:export {
+  passwordStrengthValue: 0;
+}
+
 body {
   font-family: "Inter Tight", sans-serif;
+}
+
+:export {
+  passwordStrengthValue: 0;
 }
 
 .container {

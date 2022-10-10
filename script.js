@@ -1,3 +1,5 @@
+import variables from './src/partials/_variables.scss'
+
 /****** PASSWORD STRENGTH CHECK VARIABLES ******/
 
 const passwordStrengthMeter = document.getElementById('password-strength-check');
@@ -21,8 +23,7 @@ function updateStrengthMeter() {
     passwordVulnerabilities.forEach(weakness => {
         passwordStrength -= passwordVulnerabilities.deduction;
     });
-    passwordStrengthMeter.style.setProperty('$password-strength', passwordStrength);
-    console.log(passwordStrengthMeter.style.setProperty("$password-strength", passwordStrength));
+    passwordStrengthMeter.style.setProperty(passwordStrength);
 }
 
 function calculatePasswordStrength(password) {

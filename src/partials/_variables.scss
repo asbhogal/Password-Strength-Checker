@@ -2,3 +2,7 @@ $border-radius: 0.625em;
 $translate-x: translate(-50%);
 $password-strength: 0;
 $transition-05: all 0.3 ease-in;
+
+:export {
+    passwordStrengthValue: $password-strength;
+}
