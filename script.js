@@ -1,6 +1,19 @@
+/****** PASSWORD STRENGTH CHECK VARIABLES ******/
+
+const passwordStrengthMeter = document.getElementById('password-strength-check');
+const passwordInput = document.getElementById('password-entry');
+
+/****** PASSWORD HIDE/SHOW TOGGLE VARIABLES ******/
+
 const toggleShowOrHidePWD = document.querySelector('#password-show-or-hide-section');
 let passwordState = false;
 let hideOrShowIcon = document.querySelector('.fa-eye');
+
+/****** PASSWORD STRENGTH CHECK ******/
+
+
+
+/****** PASSWORD HIDE/SHOW TOGGLE ******/
 
 toggleShowOrHidePWD.addEventListener('click', () => {
     if (passwordState) {

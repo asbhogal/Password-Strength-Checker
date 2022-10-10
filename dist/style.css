@@ -55,22 +55,22 @@ body {
   font-size: 1em;
   transition: 0.5s all ease-in;
   text-align: center;
-  transition: all 0.5 ease-in;
-  -webkit-transition: all 0.5 ease-in;
-  -moz-transition: all 0.5 ease-in;
-  -o-transition: all 0.5 ease-in;
+  transition: all 0.3 ease-in;
+  -webkit-transition: all 0.3 ease-in;
+  -moz-transition: all 0.3 ease-in;
+  -o-transition: all 0.3 ease-in;
 }
 .container #password-section #password-entry::placeholder {
   font-size: 1em;
 }
 .container #password-section #password-entry:focus {
   border-bottom-color: #ad7139;
-  transition: all 0.5 ease-in;
-  -webkit-transition: all 0.5 ease-in;
-  -moz-transition: all 0.5 ease-in;
-  -o-transition: all 0.5 ease-in;
+  transition: all 0.3 ease-in;
+  -webkit-transition: all 0.3 ease-in;
+  -moz-transition: all 0.3 ease-in;
+  -o-transition: all 0.3 ease-in;
 }
-.container .password-strength-check {
+.container #password-strength-check {
   background-color: rgb(193, 193, 193);
   height: 0.5em;
   width: 12em;
@@ -80,7 +80,7 @@ body {
   border-radius: 0.625em;
   position: relative;
 }
-.container .password-strength-check::before {
+.container #password-strength-check::before {
   content: "";
   position: absolute;
   left: 0;
