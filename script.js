@@ -2,6 +2,7 @@
 
 const passwordStrengthMeter = document.getElementById('password-strength-check');
 const passwordInput = document.getElementById('password-entry');
+const passwordResponse = document.getElementById('password-response');
 
 /****** PASSWORD HIDE/SHOW TOGGLE VARIABLES ******/
 
