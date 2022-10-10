@@ -12,7 +12,34 @@ let hideOrShowIcon = document.querySelector('.fa-eye');
 
 /****** PASSWORD STRENGTH CHECK ******/
 
+passwordInput.addEventListener('input', () => {
+    const passwordVulnerabilities = calculatePasswordStrength(passwordInput.value);
+    console.log(passwordVulnerabilities);
+})
 
+function calculatePasswordStrength(password) {
+    const passwordVulnerabilities = [];
+    passwordVulnerabilities.push(lengthVulnerabilities(password));
+    return passwordVulnerabilities;
+}
+
+function lengthVulnerabilities(password) {
+    const passwordLength = password.length;
+
+    if (passwordLength <= 5) {
+        return {
+            message: 'Your password is too weak',
+            deduction: 40
+        }
+    }
+
+    if (passwordLength <= 10) {
+        return {
+            message: 'Your password is getting stronger',
+            deduction: 20
+        }
+    }
+}
 
 /****** PASSWORD HIDE/SHOW TOGGLE ******/
 
