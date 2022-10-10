@@ -12,10 +12,18 @@ let hideOrShowIcon = document.querySelector('.fa-eye');
 
 /****** PASSWORD STRENGTH CHECK ******/
 
-passwordInput.addEventListener('input', () => {
+passwordInput.addEventListener('input', updateStrengthMeter);
+
+function updateStrengthMeter() {
     const passwordVulnerabilities = calculatePasswordStrength(passwordInput.value);
-    console.log(passwordVulnerabilities);
-})
+
+    let passwordStrength = 100;
+    passwordVulnerabilities.forEach(weakness => {
+        passwordStrength -= passwordVulnerabilities.deduction;
+    });
+    passwordStrengthMeter.style.setProperty('$password-strength', passwordStrength);
+    console.log(passwordStrengthMeter.style.setProperty("$password-strength", passwordStrength));
+}
 
 function calculatePasswordStrength(password) {
     const passwordVulnerabilities = [];
