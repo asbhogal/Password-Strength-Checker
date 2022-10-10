@@ -1,4 +1,4 @@
-import variables from './src/partials/_variables.scss'
+import variables from './src/partials/_variables.module.scss'
 
 /****** PASSWORD STRENGTH CHECK VARIABLES ******/
 
@@ -23,7 +23,7 @@ function updateStrengthMeter() {
     passwordVulnerabilities.forEach(weakness => {
         passwordStrength -= passwordVulnerabilities.deduction;
     });
-    passwordStrengthMeter.style.setProperty(passwordStrength);
+    passwordStrengthMeter.style.setProperty(passwordStengthValue.variables, passwordStrength);
 }
 
 function calculatePasswordStrength(password) {
