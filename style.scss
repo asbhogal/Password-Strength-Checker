@@ -34,6 +34,7 @@
             width: 100%;
             font-size: 1em;
             transition: 0.5s all ease-in;
+            text-align: center;
             @include cross-browser-support-transition-set;
             &::placeholder {
                 font-size: 1em;

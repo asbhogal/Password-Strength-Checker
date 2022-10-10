@@ -54,6 +54,7 @@ body {
   width: 100%;
   font-size: 1em;
   transition: 0.5s all ease-in;
+  text-align: center;
   transition: all 0.5 ease-in;
   -webkit-transition: all 0.5 ease-in;
   -moz-transition: all 0.5 ease-in;
