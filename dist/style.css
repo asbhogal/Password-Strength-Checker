@@ -17,7 +17,7 @@ body {
 }
 
 :export {
-  passwordStrengthValue: 0;
+  passwordStrengthValue: 50;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 }
 
 :export {
-  passwordStrengthValue: 0;
+  passwordStrengthValue: 50;
 }
 
 .container {
@@ -93,7 +93,7 @@ body {
   position: absolute;
   left: 0;
   height: 100%;
-  width: 0%;
+  width: 50%;
   border-radius: 0.625em;
   background-image: linear-gradient(to right, #ff0000, #ffff00, #008000);
   overflow: hidden;
