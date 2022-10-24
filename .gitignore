@@ -1,1 +1,11 @@
+## NPM DIRECTORIES ##
+
+node_modules
+
+## LOCAL CUSTOMISATIONS ##
+
 .vscode
+
+## PARCEL TEMP FILES ##
+
+.cache
