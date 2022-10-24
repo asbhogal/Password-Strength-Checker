@@ -23,7 +23,7 @@ function updateStrengthMeter() {
     passwordVulnerabilities.forEach(weakness => {
         passwordStrength -= passwordVulnerabilities.deduction;
     })
-    passwordStrengthMeter.style.setProperty(`$password-strength`, passwordStrength);
+    passwordStrengthMeter.style.setProperty(`--password-strength`, passwordStrength);
 }
 
 function calculatePasswordStrength(password) {
