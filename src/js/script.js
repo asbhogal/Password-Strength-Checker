@@ -1,4 +1,4 @@
-import variables from '../scss/partials/_variables';
+import { passwordStrengthValue } from '../scss/partials/_variables.module.scss';
 
 /****** PASSWORD STRENGTH CHECK VARIABLES ******/
 
@@ -19,11 +19,13 @@ passwordInput.addEventListener('input', updateStrengthMeter);
 function updateStrengthMeter() {
     const passwordVulnerabilities = calculatePasswordStrength(passwordInput.value);
 
-    let passwordStrength = 100;
-    passwordVulnerabilities.forEach(weakness => {
+    let passwordStrength = 100
+    passwordVulnerabilities.forEach(passwordVulnerabilities => {
         passwordStrength -= passwordVulnerabilities.deduction;
     })
-    passwordStrengthMeter.style.setProperty(`--password-strength`, passwordStrength);
+    passwordStrengthMeter.style.setProperty(passwordStrengthValue, passwordStrength + "%");
+    console.log(passwordStrength);
+    console.log(passwordStrengthValue);
 }
 
 function calculatePasswordStrength(password) {

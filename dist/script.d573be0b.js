@@ -168,15 +168,14 @@ function reloadCSS() {
   }, 50);
 }
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/partials/_variables.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/partials/_variables.module.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/script.js":[function(require,module,exports) {
 "use strict";
 
-var _variables = _interopRequireDefault(require("../scss/partials/_variables"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _variablesModule = require("../scss/partials/_variables.module.scss");
 /****** PASSWORD STRENGTH CHECK VARIABLES ******/
 
 var passwordStrengthMeter = document.getElementById('password-strength-check');
@@ -195,10 +194,12 @@ passwordInput.addEventListener('input', updateStrengthMeter);
 function updateStrengthMeter() {
   var passwordVulnerabilities = calculatePasswordStrength(passwordInput.value);
   var passwordStrength = 100;
-  passwordVulnerabilities.forEach(function (weakness) {
+  passwordVulnerabilities.forEach(function (passwordVulnerabilities) {
     passwordStrength -= passwordVulnerabilities.deduction;
   });
-  passwordStrengthMeter.style.setProperty("--password-strength", passwordStrength);
+  passwordStrengthMeter.style.setProperty(_variablesModule.passwordStrengthValue, passwordStrength + "%");
+  console.log(passwordStrength);
+  console.log(_variablesModule.passwordStrengthValue);
 }
 function calculatePasswordStrength(password) {
   var passwordVulnerabilities = [];
@@ -236,7 +237,7 @@ toggleShowOrHidePWD.addEventListener('click', function () {
     passwordState = true;
   }
 });
-},{"../scss/partials/_variables":"scss/partials/_variables.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../scss/partials/_variables.module.scss":"scss/partials/_variables.module.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -261,7 +262,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62891" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59417" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
