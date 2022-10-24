@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
-  "main": "public/main.html",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
@@ -26,5 +25,8 @@
   },
   "resolutions": {
     "node-forge": "0.10.0"
+  },
+  "dependencies": {
+    "js": "^0.1.0"
   }
 }

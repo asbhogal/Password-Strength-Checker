@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as *;
 
 @mixin cross-browser-support-transform-x-set {
     transform:              $translate-x;
