@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Strength Checker</title>
+    <link rel="icon" type="image/svl+xml" href="/favicon.svg" />
     <!-- MAIN STYLESHEET -->
-    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="/dist/style.css" />
     <!-- FONT AWESOME STYLESHEET -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- MAIN SCRIPT -->
-    <script type="module" src="/script.js" defer></script>
-</head>
-<body>
+    <script type="module" src="/main.js" defer></script>
+    <!-- PASSWORD SCRIPT -->
+    <script type="module" src="/src/js/script.js" defer></script>
+  </head>
+  <body>
     <div class="container">
-        <h1>How strong is your password?</h1>
-        <div id="password-section">
-            <input type="password" name="password-entry" id="password-entry" placeholder="Type your password here..." autofocus>
-            <span id="password-show-or-hide-section">
-                <i class="fa-solid fa-eye"></i>
-            </span>
-        </div>
-        <div id="password-strength-check">
-        </div>
-        <div id="password-response"></div>
+      <h1>How strong is your password?</h1>
+      <div id="password-section">
+        <input
+          type="password"
+          name="password-entry"
+          id="password-entry"
+          placeholder="Type your password here..."
+          autofocus
+        />
+        <span id="password-show-or-hide-section">
+          <i class="fa-solid fa-eye"></i>
+        </span>
+      </div>
+      <div id="password-strength-check"></div>
+      <div id="password-response"></div>
     </div>
     <footer>
-        <p>Please do not enter actual passwords into this form. This is only for demonstration purposes.</p>
+      <p>
+        Please do not enter actual passwords into this form. This is only for
+        demonstration purposes.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
