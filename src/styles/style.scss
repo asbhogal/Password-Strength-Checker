@@ -10,17 +10,19 @@
   border-radius: $border-radius;
   display: flex;
   flex-direction: column;
-  height: 12.75em;
   justify-content: space-evenly;
+  gap: 12px;
   h1 {
     padding-bottom: 0.15em;
   }
   #password-section {
+    display: flex;
+    align-items: center;
+    width: 105%;
     #password-show-or-hide-section {
       position: absolute;
+      right: 0;
       @include cross-browser-support-transform-x-set;
-      top: 50%;
-      right: 2.5em;
       cursor: pointer;
     }
     #password-entry {
@@ -37,7 +39,7 @@
         font-size: 1em;
       }
       &:focus {
-        border-bottom-color: #ad7139;
+        border-bottom-color: #7eafc7;
         @include cross-browser-support-transition-set;
       }
     }
@@ -60,8 +62,13 @@
       border-radius: $border-radius;
       background-image: linear-gradient(to right, #ff0000, #ffff00, #008000);
       overflow: hidden;
-      transition: width 2s;
+      transition: width 0.5s;
     }
+  }
+  #password-response {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
