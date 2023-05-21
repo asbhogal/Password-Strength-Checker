@@ -3,8 +3,9 @@ import variables from "../styles/partials/_variables.scss?inline";
 const passwordStrengthMeter = document.getElementById(
   "password-strength-check"
 );
+const passwordStrengthValue = parseInt(variables.passwordStrengthValue);
+
 const passwordInput = document.getElementById("password-entry");
-const passwordStrengthValue = variables.passwordStrengthValue;
 const passwordResponse = document.getElementById("password-response");
 
 const toggleShowOrHidePassword = document.querySelector(
@@ -25,7 +26,7 @@ function updateStrengthMeter() {
     passwordStrength -= passwordVulnerabilities.deduction;
   });
   passwordStrengthMeter.style.setProperty(
-    '--password-strength',
+    "--password-strength",
     passwordStrength
   );
 }
