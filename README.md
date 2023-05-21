@@ -6,14 +6,17 @@
 
 </div>
 
-An online tool which checks the strength of the password entered and advises the user to create a 'strong' one if it is considered 'weak' or 'medium'. This leverages JavaScript regex, and is built using vanilla HTML5 and CSS3 (SCSS.) This repo is currently under development.
+An online tool which checks the strength of the password entered and advises the user to create a 'strong' one if it is considered 'weak' or 'medium'. This leverages JavaScript regex, and is built using vanilla HTML5 and CSS3 (SCSS.)
 
 <strong>:heavy_check_mark: Features</strong>
- - UI-friendly interface which uses colors to signify current password strength
- - An option to show/hide password entered
- - Modern, stylish theme
- - Full responsiveness
- - Optimised for the web
+
+- UI-friendly interface which uses dynamic strength meter to signify current password strength
+- An option to show/hide password entered
+- Checks if at least 8 lowercase, uppercase, numbers and/or special characters have been entered
+- Checks if there are any repeat characters
+- Modern, stylish theme
+- Full responsiveness
+- Optimised for the web
 
 <strong>:nerd_face: Stacks Used</strong>
 <br><br>
@@ -21,6 +24,8 @@ An online tool which checks the strength of the password entered and advises the
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/css3/css3-original.svg" alt="css3" width="50" height="50" style="max-width:100%;"></a>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" alt="sass" width="50" height="50" style="max-width:100%;"></a>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/vitejs/vite/blob/main/docs/public/logo.svg"><img src="https://github.com/vitejs/vite/blob/main/docs/public/logo.svg" alt="Webpack logo" width="50" height="50" style="max-width:100%;"></a>
 
 <strong>:link: Links</strong><br>
- - <a target="_blank" href="https://password-strength-checker-nine.vercel.app/">Password Strength Checker</a>
+
+- <a target="_blank" href="https://password-strength-checker-nine.vercel.app/">Password Strength Checker</a>
